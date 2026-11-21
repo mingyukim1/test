@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<!-- 2026-11-21 rev.1 — 인수인계 문서 HTML판 처음 만듦 (인수인계_AI특강페이지.md 내용과 같음) -->
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>인수인계 — AI 특강 신청 페이지</title>
+<style>
+body{margin:0;background:#fff;color:#1a1a1a;font:16px/1.65 -apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif;word-break:keep-all}
+main{max-width:880px;margin:0 auto;padding:32px 20px 64px}
+h1{font-size:26px;line-height:1.3;margin:0 0 16px}
+h2{font-size:20px;margin:40px 0 12px;padding-top:16px;border-top:1px solid #e5e5e5}
+blockquote{margin:0 0 16px;padding:12px 16px;background:#fff4ec;border-left:4px solid #ff7a3d;border-radius:6px}
+blockquote p{margin:0}
+table{border-collapse:collapse;width:100%;font-size:14px;margin:8px 0 16px;display:block;overflow-x:auto}
+th,td{border:1px solid #e0e0e0;padding:8px 10px;text-align:left;vertical-align:top}
+th{background:#f6f6f6}
+a{color:#d9531a;word-break:break-all}
+code{background:#f3f3f3;padding:1px 5px;border-radius:4px;font-size:.92em}
+pre{background:#f6f6f6;padding:14px;border-radius:8px;overflow-x:auto}
+pre code{background:none;padding:0}
+hr{display:none}
+</style>
+</head>
+<body>
+<main>
+<h1>인수인계 — 호서대학교 × 일잘러랩 AI 특강 신청 페이지 (index.html)</h1>
+<blockquote>
+<p>다른 창에서 이어서 작업할 때 이 문서를 먼저 올려 주세요.
+<strong>최신 버전: rev.9 (2026-11-21)</strong></p>
+</blockquote>
+<hr />
+<h2>1. 참고 파일</h2>
+<table>
+<thead>
+<tr>
+<th>파일</th>
+<th>어디에 있나</th>
+<th>용도</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>기획서원고_세미나.md</code></td>
+<td>프로젝트 "바이브 코딩" 문서</td>
+<td>목적·대상·구역 순서·기능 단계</td>
+</tr>
+<tr>
+<td><code>페이지원고_index.txt</code> (rev.2)</td>
+<td>대화에 업로드한 파일 (프로젝트에는 없음 → <strong>다시 올려야 함</strong>)</td>
+<td>화면에 들어갈 글자 기준</td>
+</tr>
+<tr>
+<td>디자인 시안 3장</td>
+<td>아래 4번 표</td>
+<td>색상·분위기 참고</td>
+</tr>
+<tr>
+<td>최신 index.html</td>
+<td>rev.9 미리보기에서 받은 파일</td>
+<td>이어서 고칠 원본</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>2. 아티팩트(미리보기) 목록</h2>
+<table>
+<thead>
+<tr>
+<th>rev</th>
+<th>마지막 수정 날짜</th>
+<th>제목</th>
+<th>링크</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rev.1</td>
+<td>2026-11-21</td>
+<td>rev.1 AI 특강 신청 페이지 — 메인페이지 처음 만듦</td>
+<td><a href="https://claude.ai/artifact/XeepwXEz1pu4ZtYT9uLzoC">https://claude.ai/artifact/XeepwXEz1pu4ZtYT9uLzoC</a></td>
+</tr>
+<tr>
+<td>rev.2</td>
+<td>2026-11-21</td>
+<td>rev.2 AI 특강 신청 페이지 — 디자인 시안 사진 함께 보기</td>
+<td><a href="https://claude.ai/artifact/JpzsRzxnbKFo5CZaWfLctB">https://claude.ai/artifact/JpzsRzxnbKFo5CZaWfLctB</a></td>
+</tr>
+<tr>
+<td>rev.3</td>
+<td>2026-11-21</td>
+<td>rev.3 AI 특강 신청 페이지 — 헤더 로고 변경</td>
+<td><a href="https://claude.ai/artifact/QUrE4DFeoH1K9YFHcrNaFu">https://claude.ai/artifact/QUrE4DFeoH1K9YFHcrNaFu</a></td>
+</tr>
+<tr>
+<td>rev.4</td>
+<td>2026-11-21</td>
+<td>rev.4 AI 특강 신청 페이지 — 첫 화면 위 여백 줄임</td>
+<td><a href="https://claude.ai/artifact/QLr5yUJsj4D7ptkHN5EFpS">https://claude.ai/artifact/QLr5yUJsj4D7ptkHN5EFpS</a></td>
+</tr>
+<tr>
+<td>rev.5</td>
+<td>2026-11-21</td>
+<td>rev.5 AI 특강 신청 페이지 — 첫 화면 왼쪽 그라데이션 · 정보 박스 제거</td>
+<td><a href="https://claude.ai/artifact/CREud6eFGZNaVW1vAG8fxc">https://claude.ai/artifact/CREud6eFGZNaVW1vAG8fxc</a></td>
+</tr>
+<tr>
+<td>rev.6</td>
+<td>2026-11-21</td>
+<td>rev.6 AI 특강 신청 페이지 — 글꼴 변경</td>
+<td><a href="https://claude.ai/artifact/TVzG7CUUN6PRo2Fv2qXS3Y">https://claude.ai/artifact/TVzG7CUUN6PRo2Fv2qXS3Y</a></td>
+</tr>
+<tr>
+<td>rev.7</td>
+<td>2026-11-21</td>
+<td>rev.7 AI 특강 신청 페이지 — 카운트다운 추가</td>
+<td><a href="https://claude.ai/artifact/RyG6KaYQZpeRANYZ2XRqAK">https://claude.ai/artifact/RyG6KaYQZpeRANYZ2XRqAK</a></td>
+</tr>
+<tr>
+<td>rev.8</td>
+<td>2026-11-21</td>
+<td>rev.8 AI 특강 신청 페이지 — 버튼·카운트다운 높이 맞춤</td>
+<td><a href="https://claude.ai/artifact/7CeJzEqTYtN954MkGfQLRU">https://claude.ai/artifact/7CeJzEqTYtN954MkGfQLRU</a></td>
+</tr>
+<tr>
+<td><strong>rev.9 (최신)</strong></td>
+<td><strong>2026-11-21</strong></td>
+<td><strong>rev.9 AI 특강 신청 페이지 — 버튼·박스 60px · 숫자 주황색</strong></td>
+<td><strong><a href="https://claude.ai/artifact/Fr3XMfcm9ncE3zeTmFnQmG">https://claude.ai/artifact/Fr3XMfcm9ncE3zeTmFnQmG</a></strong></td>
+</tr>
+</tbody>
+</table>
+<p>※ 링크는 만든 사람 본인만 열 수 있습니다 (공유 전).</p>
+<hr />
+<h2>3. 현재 상태 (rev.9 기준)</h2>
+<p><strong>화면 구역 (위 → 아래)</strong>
+헤더(호서대학교 마크 + [신청하기]) → ① 첫 화면 → ② 이런 분께 추천합니다 → ③ 커리큘럼 → ④ 강점 3가지 → ⑤ 강사 소개 → ⑥ 참가 혜택 → ⑦ 참가비 → ⑧ 자주 묻는 질문 → ⑨ 마지막 신청 유도 → 푸터 → (미리보기 전용) 디자인 시안 사진</p>
+<p><strong>기획서 단계 진행 상황</strong>
+| 단계 | 내용 | 상태 |
+|---|---|---|
+| 1 | 화면만 만들기 | ✅ 완료 (rev.1) |
+| 2 | 한 군데 고치기 | ✅ 여러 번 고침 (rev.3~6, 8~9) |
+| 3 | 신청 완료 알림 + 휴대폰 아래 고정 버튼 | ⬜ 아직 안 함 |
+| 4 | 자주 묻는 질문 펼치기 | ⬜ 아직 안 함 (지금은 모두 펼쳐 둠) |
+| 5 | 카운트다운 | ✅ 완료 (rev.7, 0이 되면 멈춤) |</p>
+<p><strong>지금까지 정한 디자인</strong>
+- 바탕: 검정 계열 (#0a0a0b / #141416 번갈아), 강조색: 주황 그라데이션 (#ff9a5c → #ff7a3d)
+- 글꼴: Pretendard → Noto Sans KR(구글 폰트에서 불러옴) → 기기 기본 글꼴
+- 헤더 로고: 글자 대신 호서대학교 마크, 흰색 둥근 박스 위에 표시 ("일잘러랩" 글자는 빠짐)
+- ① 첫 화면: 위쪽 여백 휴대폰 16px / 컴퓨터 24px, 왼쪽 검은색 그라데이션, 날짜·장소·인원은 박스 없이 글자만
+- 카운트다운: 숫자 박스와 [지금 신청하기] 버튼 높이 60px, 숫자는 주황 그라데이션. 컴퓨터는 버튼 옆, 휴대폰은 버튼 위</p>
+<p><strong>남은 일·주의</strong>
+- 강사 사진 <code>teacher.jpg</code>는 아직 없음 → 회색 사진 자리로 표시 중
+- 맨 아래 "디자인 시안 (미리보기 전용)" 구역은 원고에 없음 → <strong>Cloudflare에 올릴 때 지우기</strong></p>
+<hr />
+<h2>4. 이미지 목록</h2>
+<table>
+<thead>
+<tr>
+<th>파일</th>
+<th>저장 위치 (원본)</th>
+<th>HTML에서 가리키는 주소</th>
+<th>확인 결과</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>hoseo_logo.png (470×138)</td>
+<td>rev.9 아티팩트 안 <code>images/hoseo_logo.png</code></td>
+<td><code>images/hoseo_logo.png</code></td>
+<td>✅ 열림 확인</td>
+</tr>
+<tr>
+<td>layout_15.jpg (603×901)</td>
+<td>rev.9 아티팩트 안 <code>images/layout_15.jpg</code></td>
+<td><code>images/layout_15.jpg</code></td>
+<td>✅ 열림 확인</td>
+</tr>
+<tr>
+<td>layout_16.jpg (606×909)</td>
+<td>rev.9 아티팩트 안 <code>images/layout_16.jpg</code></td>
+<td><code>images/layout_16.jpg</code></td>
+<td>✅ 열림 확인</td>
+</tr>
+<tr>
+<td>layout_13.jpg (611×909)</td>
+<td>rev.9 아티팩트 안 <code>images/layout_13.jpg</code></td>
+<td><code>images/layout_13.jpg</code></td>
+<td>✅ 열림 확인</td>
+</tr>
+<tr>
+<td>위 4장 — 프로젝트 원본 저장</td>
+<td>프로젝트 "바이브 코딩"에 저장 안 됨</td>
+<td>—</td>
+<td>⚠️ <strong>확인 필요</strong></td>
+</tr>
+<tr>
+<td>teacher.jpg</td>
+<td>파일 없음</td>
+<td>(사진 자리 회색 박스)</td>
+<td>⚠️ <strong>확인 필요</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>확인 방법:</strong> 저장한 사진을 다시 읽어서 4장 모두 열리는 것을 확인했어요. rev.9 아티팩트 안의 사진도 원본과 같은 파일인지 지문 값(sha256)으로 비교해서 똑같은 것을 확인했어요.</p>
+<p><strong>프로젝트에 원본을 올리는 방법 (직접):</strong> claude.ai → 프로젝트 "바이브 코딩" → 파일 추가 → 사진 4장 업로드. Claude가 프로젝트에 저장할 수 있는 건 글자 문서뿐이라 사진은 직접 올려야 해요.</p>
+<p><strong>내 컴퓨터에서 쓸 때 폴더 모양</strong></p>
+<pre><code>내폴더/
+├─ index.html
+└─ images/
+   ├─ hoseo_logo.png
+   ├─ layout_15.jpg
+   ├─ layout_16.jpg
+   └─ layout_13.jpg
+</code></pre>
+<hr />
+<h2>5. 작업 규칙 (프로젝트 지침 요약)</h2>
+<ol>
+<li>"진행해줘" 전에는 파일을 만들거나 고치지 않고, 먼저 짧게 설명한다.</li>
+<li>한 번에 하나씩, 말한 곳만 고친다.</li>
+<li>원고에 없는 문장·숫자·후기는 지어내지 않고, 애매하면 먼저 묻는다.</li>
+<li>파일은 항상 전체로 주고, 맨 위 주석에 날짜·rev·바꾼 내용을 적는다.</li>
+<li>미리보기 제목 맨 앞에 rev 번호를 붙이고, 같은 rev의 html 파일도 함께 준다.</li>
+<li><strong>기존 미리보기는 절대 덮어쓰지 않고, 매번 새 미리보기를 만든다.</strong> → 다음 작업은 <strong>rev.10</strong>부터</li>
+</ol>
+<hr />
+<h2>6. 새 창에서 이어 갈 때 보낼 요청문 (예시)</h2>
+<blockquote>
+<p>인수인계 문서, 페이지 원고, 최신 index.html(rev.9)을 올렸어. 이어서 작업할 거야. 다음은 3단계 — [지금 신청하기]를 누르면 원고의 "신청 완료" 알림이 잠깐 떴다가 사라지게 해 줘. 휴대폰에서는 신청 버튼이 화면 아래에 항상 떠 있게. 다른 곳은 그대로 둬.</p>
+</blockquote>
+</main>
+</body>
+</html>
