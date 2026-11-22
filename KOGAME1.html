@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<!-- 2026-11-22 rev.16 — ② 농가 이야기 마지막 문장 '내 부모님께' → '부모님께' -->
+<!-- 2026-11-22 rev.15 — ② 농가 이야기 동영상을 가운데로 옮김, 생산자 이름 김송밀 → 김송미 (② 농가 이야기, 맨 아래 농원 정보) -->
+<!-- 2026-11-22 rev.14 — ② 농가 이야기 글 아래에 감 따는 동영상 넣음 (세로, 너비 약 280px, ▶ 눌러서 재생, 소리 있음, 표지는 첫 장면) -->
+<!-- 2026-11-22 rev.13 — 사진 크기 줄임: ② 감나무밭·⑥ 보자기 사진 최대 420px·가로로 긴 모양(컴퓨터는 사진 2 : 글 3), ③ 생산 과정 사진 높이 줄임(건조장 4:3, 선별기 16:9, 휴대폰 최대 420px) -->
+<!-- 2026-11-22 rev.12 — 화면 내용은 rev.11과 같음. 미리보기에서 사진이 안 보여서, 미리보기 전용 파일(사진 내장)을 따로 만듦 -->
+<!-- 2026-11-22 rev.11 — 전화번호 모두 지움 (① 첫 화면·⑨ 마지막 [전화 문의] 버튼, 맨 아래 H.P 줄), 생산자 이름 김종현 → 김송밀 (② 농가 이야기, 맨 아래 농원 정보) -->
+<!-- 2026-11-22 rev.10 — 첫 화면 '상주 곶감' 위의 '참살이 농원' 글자 지움 (농원 이름이 CI와 두 번 보이던 것 정리) -->
+<!-- 2026-11-22 rev.9 — 첫 화면 오른쪽 위에 CI(참살이 농원·상주 곶감 도장) 넣음 -->
+<!-- 2026-11-22 rev.8 — 사진이 없는 사진 자리 3곳 지움 (③ 수확, ④ 건시 안내, ⑥ 배송 상자) -->
+<!-- 2026-11-22 rev.7 — 미리보기 전용 파일(사진 내장)만 만듦, 이 파일은 바뀌지 않음 -->
+<!-- 2026-11-22 rev.6 — 컴퓨터 화면에서 [전화 문의] 버튼 글자가 칸 밖으로 넘치던 것 고침 (버튼 너비가 글자에 맞춰 늘어남) -->
+<!-- 2026-11-22 rev.5 — 첫 화면 사진을 보자기 → 명품 곶감 사진으로 변경 -->
+<!-- 2026-11-22 rev.4 — 농원 이름 참살이 농원으로 변경, 등급 이름을 명품·특과·대과·중과로 변경, 실속형 상자(2.4kg·40,000원)·실속형 봉지 카드 추가, 감 크기 비교 넣음 -->
+<!-- 2026-11-22 rev.3 — 첫 화면 소개 문장, ② 상주 농가 이야기 본문 글 넣음 -->
+<!-- 2026-11-22 rev.2 — 사진을 PPT 원본 사진으로 바꿈 (보자기·감나무밭·건조장·선별기·상품 5종·감나무 가지) -->
+<!-- 2026-11-22 rev.1 — 메인페이지 처음 만듦 (화면만, 기능 없음) -->
+<!-- 글자: 시안 문구 + 기획서 구역 이름·등급표 + 대화에서 확정한 문장(첫 화면, 농가 이야기). 나머지는 '원고 자리'로 비워 둠 -->
+<!-- 사진: PPT 원본 사진(images 폴더). 감말랭이는 시안, 봉지·크기 비교는 새 이미지, 감 그림은 PPT에서 가져온 사진. 사진이 없으면 회색 '사진 자리'에 파일 이름이 보임 -->
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>rev.16 참살이 농원 곶감 메인페이지 — 농가 이야기 문장 고침</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap" rel="stylesheet">
+<style>
+/* VOICE: 따뜻하고 정직한 농가 직판, 어르신도 읽기 쉽게
+   IDEA: 시안의 가격 전단 — 한지 위 감나무 수묵화, 둥근 사진 카드
+   PICTURE: 보자기 포장 사진을 첫 화면에 크게
+   COLOUR and TYPE: 한지 미색 바탕, 곶감 주황 + 보자기 노랑, 제목 붓글씨 / 본문 고딕
+   LAYOUT: 휴대폰 한 줄 세로 → 컴퓨터 두 칸, 구역마다 배경 번갈아 */
+:root{color-scheme:light;
+  --paper:#fbf6ec;--paper2:#f4e9d6;--white:#fffdf8;
+  --ink:#2b2420;--sub:#6b5d52;
+  --gam:#e0631d;--gam-dk:#b9480f;--bo:#e8b324;--blue:#3a6db3;
+  --line:#e6d8c2;--r:18px}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font:17px/1.65 -apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR",sans-serif;
+  overflow-x:clip;word-break:keep-all}
+img{display:block;max-width:100%}
+.wrap{max-width:1080px;margin:0 auto}
+.band{padding:56px max(5vw,18px)}
+.band.alt{background:var(--paper2)}
+.band.white{background:var(--white)}
+.brush{font-family:"Nanum Brush Script",cursive;font-weight:400;line-height:1.05}
+h2{font-family:"Nanum Brush Script",cursive;font-weight:400;font-size:46px;line-height:1.05;margin:0 0 6px;color:var(--ink);text-wrap:balance}
+.kicker{color:var(--gam-dk);font-weight:700;font-size:15px;margin:0 0 4px}
+.sec-head{margin-bottom:24px}
+
+/* 사진 자리: 사진이 없으면 회색 박스 + 파일 이름 */
+.ph{position:relative;background:#d9d6d1;border-radius:var(--r);overflow:hidden;aspect-ratio:4/3;
+  display:grid;place-items:center;color:#6f6a64;font-size:14px;box-shadow:0 6px 18px rgba(80,50,20,.12)}
+.ph>span{padding:8px;text-align:center}
+.ph>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+
+/* 원고 자리: 원고가 오면 이 박스를 글로 바꿈 */
+.todo{border:2px dashed #cdb89a;border-radius:12px;padding:14px 16px;color:var(--sub);font-size:15px;background:rgba(255,255,255,.5)}
+.todo b{color:var(--gam-dk)}
+
+/* 버튼 (모양만) */
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:0 26px;border-radius:14px;
+  font-size:19px;font-weight:800;text-decoration:none;cursor:default;flex:1 1 auto;white-space:nowrap}
+.btn.order{background:var(--gam);color:#fff;box-shadow:0 4px 0 var(--gam-dk)}
+.btn.call{background:#fff;color:var(--ink);border:2px solid var(--ink)}
+.nowrap{white-space:nowrap}
+
+/* ① 첫 화면 */
+.hero{position:relative;padding-top:20px;overflow:hidden}
+.branch{width:min(300px,70vw);mix-blend-mode:multiply;margin:-10px 0 0 -12px}
+.top{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
+.top .branch{flex:0 1 auto;min-width:0}
+.ci{flex:none;width:110px;height:auto;margin-top:4px}
+.hero h1{font-family:"Nanum Brush Script",cursive;font-weight:400;font-size:clamp(64px,16vw,104px);line-height:.95;margin:0 0 14px;color:var(--ink)}
+.hero .ph{aspect-ratio:3/2;margin:6px 0 18px}
+.notice{background:#fff7dc;border:2px solid var(--bo);border-radius:var(--r);padding:16px 18px;font-weight:700;text-align:center;line-height:1.55}
+.notice .yr{display:block;color:#c98f00;font-size:22px}
+.notice em{font-style:normal;color:#d23b1e}
+.hero .intro{font-size:18px;line-height:1.7;margin:0 0 16px;color:var(--ink)}
+.hero .todo{margin-bottom:16px}
+
+/* ② 농가 이야기 */
+.story{display:grid;gap:22px}
+.maker{font-size:22px;font-weight:800;margin:0}
+.addr{color:var(--sub);margin:2px 0 14px;font-size:16px}
+.story-text p{margin:0 0 14px}
+.story>.ph{width:100%;max-width:420px;margin-inline:auto;aspect-ratio:16/9}
+/* ②-2 감 따는 동영상: 세로 모양, ▶ 눌러야 재생 */
+.story-video{display:block;width:280px;max-width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:var(--r);background:#d9d6d1;box-shadow:0 6px 18px rgba(80,50,20,.12);margin:6px auto 0}
+
+/* ③ 생산 과정 */
+.steps{display:grid;gap:18px;counter-reset:s}
+.step h3{margin:12px 0 4px;font-size:20px}
+.step h3::before{counter-increment:s;content:counter(s);display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;
+  background:var(--gam);color:#fff;font-size:16px;margin-right:8px;vertical-align:2px}
+.step .pair{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.step .pair .ph{aspect-ratio:4/3}
+.step>.ph{aspect-ratio:16/9}
+.step .pair,.step>.ph{width:100%;max-width:420px;margin-inline:auto}
+.caption{text-align:center;color:var(--sub);margin:22px 0 0;font-size:16px}
+
+/* ④ 건시 안내 */
+.taste{display:grid;gap:22px;align-items:center}
+
+/* ⑤ 등급별 구성·가격 */
+.grades{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.card{background:#fff;border-radius:var(--r);padding:8px 8px 14px;box-shadow:0 4px 14px rgba(80,50,20,.08);text-align:center}
+.card .ph{aspect-ratio:1/1;box-shadow:none;border-radius:14px}
+.card h3{margin:10px 0 2px;font-size:20px}
+.tag{display:inline-block;font-size:13px;font-weight:700;color:var(--blue);border:1.5px solid var(--blue);border-radius:99px;padding:0 8px;margin-left:4px;vertical-align:3px}
+.tag.home{color:var(--gam-dk);border-color:var(--gam-dk)}
+.spec{color:var(--sub);font-size:14px;margin:0;line-height:1.45}
+.price{font-size:22px;font-weight:900;margin:6px 0 0;white-space:nowrap}
+.price small{font-size:14px;font-weight:700;color:var(--sub)}
+.note{font-size:14px;color:var(--sub);margin:14px 0 0}
+.sizes{background:#fff;border-radius:var(--r);padding:18px 14px;margin-top:22px;text-align:center}
+.sizes h3{margin:0 0 12px;font-size:20px}
+.size-pic{aspect-ratio:595/130;box-shadow:none;border-radius:0;background:#fff}
+.size-pic>img{object-fit:contain}
+.size-lb{list-style:none;margin:8px 0 0;padding:0;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));font-size:12px;color:var(--sub);line-height:1.35}
+.size-lb b{display:block;font-size:15px;color:var(--ink)}
+
+/* ⑥ 포장·배송 */
+.ship{display:grid;gap:22px;align-items:center}
+.ship .pics{display:grid;gap:10px;width:100%;max-width:420px;margin-inline:auto}
+.ship .pics .ph{aspect-ratio:16/9}
+.redline{color:#d23b1e;font-weight:800;margin:0 0 10px}
+.fee{font-size:19px;font-weight:800;color:var(--blue);margin:0 0 14px}
+
+/* ⑦ 보관법 */
+.keep{display:grid;gap:14px}
+.keep .box{background:#fff;border-radius:var(--r);padding:18px}
+.keep h3{margin:0 0 10px;font-size:21px}
+
+/* ⑧ 자주 묻는 질문 (펼치기 기능 없음, 모양만) */
+.faq{display:grid;gap:10px}
+.faq .q{background:#fff;border-radius:14px;padding:16px 18px;border:1px solid var(--line)}
+.faq .q p{margin:0 0 8px;font-weight:800}
+
+/* ⑨ 마지막 주문 유도 */
+.last{text-align:center}
+.logo-txt{font-family:"Nanum Brush Script",cursive;font-size:48px;line-height:1;margin:0 0 14px;color:#2d3f63;display:flex;align-items:center;justify-content:center;gap:10px}
+.logo-txt .o{color:var(--gam)}
+.logo-txt img{width:48px;height:48px;mix-blend-mode:multiply}
+.last h2{font-size:52px}
+.last .btns{max-width:560px;margin:22px auto 0}
+footer{background:#3a2e26;color:#e9dccb;padding:28px max(5vw,18px) 40px;font-size:15px;text-align:center}
+footer p{margin:2px 0}
+
+/* 컴퓨터 화면 */
+@media(min-width:860px){
+  .band{padding:84px max(5vw,24px)}
+  h2{font-size:56px}
+  .hero-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:44px;align-items:center}
+  .hero .ph{margin:0}
+  .ci{width:170px;margin-top:10px}
+  .story,.ship{grid-template-columns:2fr 3fr;gap:44px}
+  .steps{grid-template-columns:repeat(3,1fr)}
+  .grades{grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+  .keep{grid-template-columns:1fr 1fr}
+  .sizes{padding:26px 40px}
+  .size-lb{font-size:14px}
+  .size-lb b{font-size:18px}
+}
+</style>
+</head>
+<body>
+
+<!-- ① 첫 화면 -->
+<header class="band hero">
+  <div class="wrap">
+    <!-- 첫 화면 맨 위: 왼쪽 감나무 가지, 오른쪽 CI -->
+    <div class="top">
+      <img class="branch" src="images/branch.png" alt="" onerror="this.remove()">
+      <img class="ci" src="images/ci.png" alt="참살이 농원 상주 곶감" onerror="this.remove()">
+    </div>
+    <div class="hero-grid">
+      <div>
+        <h1>상주 곶감</h1>
+        <p class="intro">상주의 가을 햇살과 찬 바람이 천천히 말려 낸 주홍빛 곶감,<br>부모님께 드리는 설 선물로 보자기에 곱게 싸서 보내드립니다.</p>
+        <div class="notice">
+          <span class="yr">○○○○년 설 배송</span>
+          <em>○○월 ○○일</em> 주문까지 택배 배송되며,<br>
+          <em>○○월 ○○일</em> 이후 주문은 전화 문의 주세요.
+        </div>
+        <div class="btns">
+          <a class="btn order">주문하기</a>
+        </div>
+      </div>
+      <div class="ph"><span>gunsi-1.jpg</span><img src="images/gunsi-1.jpg" alt="명품 곶감 상자" onerror="this.remove()"></div>
+    </div>
+  </div>
+</header>
+
+<!-- ② 상주 농가 이야기 -->
+<section class="band white">
+  <div class="wrap story">
+    <div class="ph"><span>orchard.jpg</span><img src="images/orchard.jpg" alt="상주 감나무밭" loading="lazy" onerror="this.remove()"></div>
+    <div>
+      <div class="sec-head"><h2>상주 농가 이야기</h2></div>
+      <p class="maker"><span class="nowrap">참살이 농원</span> 김송미</p>
+      <p class="addr">경상북도 상주시 내서면 노류리 444번지</p>
+      <div class="story-text">
+        <p>경상북도 상주시 내서면, 산자락 아래 감나무밭에서 저희 가족이 곶감을 만듭니다.</p>
+        <p>봄에는 감나무를 돌보고, 가을이면 잘 익은 감을 한 알씩 따서 깎아 매답니다.
+        상주의 겨울 햇빛과 차고 마른 바람은 곶감을 말리기에 꼭 맞습니다.
+        그 겨울 동안 천천히 말린 뒤, 무게별로 고르고 정성껏 포장하는 일까지 모두 저희 가족의 손을 거칩니다.</p>
+        <p>부모님께 드린다는 마음으로 만들었습니다.</p>
+      </div>
+      <!-- ②-2 감 따는 동영상 (Cloudflare: videos/harvest.mp4, 표지 images/harvest-poster.jpg) -->
+      <video class="story-video" controls playsinline preload="none" poster="images/harvest-poster.jpg">
+        <source src="videos/harvest.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+</section>
+
+<!-- ③ 생산 과정 -->
+<section class="band">
+  <div class="wrap">
+    <div class="sec-head"><h2>생산 과정</h2></div>
+    <div class="steps">
+      <div class="step">
+        <h3>수확</h3>
+        <div class="todo"><b>원고 자리</b> · 수확 설명</div>
+      </div>
+      <div class="step">
+        <div class="pair">
+          <div class="ph"><span>drying-1.jpg</span><img src="images/drying-1.jpg" alt="건조장에 매달린 감" loading="lazy" onerror="this.remove()"></div>
+          <div class="ph"><span>drying-2.jpg</span><img src="images/drying-2.jpg" alt="건조장 내부" loading="lazy" onerror="this.remove()"></div>
+        </div>
+        <h3>건조</h3>
+        <div class="todo"><b>원고 자리</b> · 건조 설명</div>
+      </div>
+      <div class="step">
+        <div class="ph"><span>sorter.jpg</span><img src="images/sorter.jpg" alt="곶감 선별기" loading="lazy" onerror="this.remove()"></div>
+        <h3>선별</h3>
+        <div class="todo"><b>원고 자리</b> · 선별 설명</div>
+      </div>
+    </div>
+    <p class="caption">한 해 동안 감 나무를 관리하고 곶감을 수확하기까지의 과정입니다.</p>
+  </div>
+</section>
+
+<!-- ④ 건시 안내 -->
+<section class="band white">
+  <div class="wrap taste">
+    <div>
+      <div class="sec-head"><h2>건시 안내</h2></div>
+      <div class="todo"><b>원고 자리</b> · 건시 식감, 반건시와 다른 점</div>
+    </div>
+  </div>
+</section>
+
+<!-- ⑤ 등급별 구성·가격 -->
+<section class="band alt">
+  <div class="wrap">
+    <div class="sec-head"><h2>등급별 구성·가격</h2></div>
+    <div class="grades">
+      <div class="card">
+        <div class="ph"><span>gunsi-1.jpg</span><img src="images/gunsi-1.jpg" alt="명품 곶감 상자" loading="lazy" onerror="this.remove()"></div>
+        <h3>명품<span class="tag">선물용</span></h3>
+        <p class="spec">개당 56g 이상<br>30~35구 / 2.2kg</p>
+        <p class="price">○○,○○○원<small>/Box</small></p>
+      </div>
+      <div class="card">
+        <div class="ph"><span>gunsi-2.jpg</span><img src="images/gunsi-2.jpg" alt="특과 곶감 상자" loading="lazy" onerror="this.remove()"></div>
+        <h3>특과<span class="tag">선물용</span></h3>
+        <p class="spec">개당 51~55g<br>40구 / 2.2kg</p>
+        <p class="price">○○,○○○원<small>/Box</small></p>
+      </div>
+      <div class="card">
+        <div class="ph"><span>gunsi-3.jpg</span><img src="images/gunsi-3.jpg" alt="대과 곶감 상자" loading="lazy" onerror="this.remove()"></div>
+        <h3>대과<span class="tag">선물용</span></h3>
+        <p class="spec">개당 46~50g<br>40구</p>
+        <p class="price">○○,○○○원<small>/Box</small></p>
+      </div>
+      <div class="card">
+        <div class="ph"><span>gunsi-4.jpg</span><img src="images/gunsi-4.jpg" alt="중과 곶감 상자" loading="lazy" onerror="this.remove()"></div>
+        <h3>중과<span class="tag">선물용</span></h3>
+        <p class="spec">개당 41~45g<br>36구</p>
+        <p class="price">○○,○○○원<small>/Box</small></p>
+      </div>
+      <div class="card">
+        <div class="ph"><span>gunsi-6.jpg</span><img src="images/gunsi-6.jpg" alt="실속형 곶감 상자" loading="lazy" onerror="this.remove()"></div>
+        <h3>실속형 상자<span class="tag home">실속형</span></h3>
+        <p class="spec">2.4kg / 중과</p>
+        <p class="price">40,000원<small>/Box</small></p>
+      </div>
+      <div class="card">
+        <div class="ph"><span>bag.jpg</span><img src="images/bag.jpg" alt="실속형 봉지 곶감" loading="lazy" onerror="this.remove()"></div>
+        <h3>실속형 봉지<span class="tag home">실속형</span></h3>
+        <p class="spec">구당 41~45g / 중과</p>
+        <p class="price">10,000원<small>/0.5kg</small></p>
+        <p class="price">20,000원<small>/1.0kg</small></p>
+      </div>
+      <div class="card">
+        <div class="ph"><span>malaengi.jpg</span><img src="images/malaengi.jpg" alt="감말랭이" loading="lazy" onerror="this.remove()"></div>
+        <h3>감말랭이</h3>
+        <p class="spec">1팩</p>
+        <p class="price">○○,○○○원<small>/Pack</small></p>
+      </div>
+    </div>
+    <!-- ⑤-2 감 크기 비교 -->
+    <div class="sizes">
+      <h3>감 크기 비교</h3>
+      <div class="ph size-pic"><span>size-compare.jpg</span><img src="images/size-compare.jpg" alt="골프공과 소과·중과·대과·특과·명품 감 크기 비교" loading="lazy" onerror="this.remove()"></div>
+      <ul class="size-lb">
+        <li><b>골프공</b></li>
+        <li><b>소과</b>40g 이하</li>
+        <li><b>중과</b>41~45g</li>
+        <li><b>대과</b>46~50g</li>
+        <li><b>특과</b>51~55g</li>
+        <li><b>명품</b>56g 이상</li>
+      </ul>
+    </div>
+    <div class="todo" style="margin-top:14px"><b>확인 필요</b> · 등급 이름·무게는 감 크기 비교 기준, 구성은 기획서 기준. ○ 가격은 올해 확정 후 채움</div>
+    <div class="btns"><a class="btn order">주문하기</a></div>
+  </div>
+</section>
+
+<!-- ⑥ 포장·배송 -->
+<section class="band white">
+  <div class="wrap ship">
+    <div class="pics">
+      <div class="ph"><span>bojagi.jpg</span><img src="images/bojagi.jpg" alt="보자기 포장" loading="lazy" onerror="this.remove()"></div>
+    </div>
+    <div>
+      <div class="sec-head"><h2>포장·배송</h2></div>
+      <p class="redline">[배송시 선물용 보자기가 포함됩니다]</p>
+      <p class="fee">80,000원 이상 시 배송비 무료,<br>그 외 배송비 4,000원 착불입니다.</p>
+      <div class="todo"><b>원고 자리</b> · 포장·배송 추가 안내</div>
+    </div>
+  </div>
+</section>
+
+<!-- ⑦ 보관법 -->
+<section class="band">
+  <div class="wrap">
+    <div class="sec-head"><h2>보관법</h2></div>
+    <div class="keep">
+      <div class="box"><h3>냉장</h3><div class="todo"><b>원고 자리</b> · 냉장 보관 방법</div></div>
+      <div class="box"><h3>냉동</h3><div class="todo"><b>원고 자리</b> · 냉동 보관 방법</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ⑧ 자주 묻는 질문 (펼치기 기능은 나중 단계) -->
+<section class="band alt">
+  <div class="wrap">
+    <div class="sec-head"><h2>자주 묻는 질문</h2></div>
+    <div class="faq">
+      <div class="q"><p>원고 자리 · 질문 1</p><div class="todo">답변 (예: 하얀 가루)</div></div>
+      <div class="q"><p>원고 자리 · 질문 2</p><div class="todo">답변 (예: 단체 주문)</div></div>
+      <div class="q"><p>원고 자리 · 질문 3</p><div class="todo">답변</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ⑨ 마지막 주문 유도 -->
+<section class="band white last">
+  <div class="wrap">
+    <p class="logo-txt"><span class="o">참살이</span> 농원 <img src="images/gam-icon.jpg" alt="" onerror="this.remove()"></p>
+    <div class="todo" style="max-width:560px;margin:0 auto"><b>원고 자리</b> · 마지막 주문 권유 문장</div>
+    <div class="btns">
+      <a class="btn order">주문하기</a>
+    </div>
+  </div>
+</section>
+
+<!-- 맨 아래 농원 정보 -->
+<footer>
+  <p><b>참살이 농원 김송미</b></p>
+  <p>경상북도 상주시 내서면 노류리 444번지</p>
+</footer>
+
+</body>
+</html>
